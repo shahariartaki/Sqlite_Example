@@ -16,6 +16,7 @@ public class UserDb extends dbHalper{
        cv.put(dbHalper.COL_NAME,model.name);
        cv.put(dbHalper.COL_EMAIL,model.email);
        cv.put(dbHalper.COL_PHONE,model.phone);
+
        db.insert(dbHalper.TAB_USER,null,cv);
 
        db.close();
